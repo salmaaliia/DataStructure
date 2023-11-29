@@ -26,6 +26,8 @@ int queueFull(queue*);
 
 int queueSize(queue*);
 
+void clearQueue(queue*);
+
 void traverseQueue(queue*, void (*)(queueEntry));
 
 #endif

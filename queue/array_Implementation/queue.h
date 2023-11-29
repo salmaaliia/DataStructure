@@ -24,7 +24,7 @@ int queueFull(queue*);
 
 int queueSize(queue*);
 
-int clearQueue(queue*);
+void clearQueue(queue*);
 
 void traverseQueue(queue *, void (*)(queueEntry));
 

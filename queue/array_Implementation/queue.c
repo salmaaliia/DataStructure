@@ -38,7 +38,7 @@ int queueSize(queue *pq)
     return pq->size;
 }
 
-int clearQueue(queue *pq)
+void clearQueue(queue *pq)
 {
     pq->front = 0;
     pq->rear = -1;
