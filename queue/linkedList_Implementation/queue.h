@@ -16,7 +16,9 @@ typedef struct Queue{
 
 void createQueue(queue*);
 
-int serve(queueEntry*, queue*);
+int append(queueEntry, queue*);
+
+void serve(queueEntry*, queue*);
 
 int queueEmpty(queue*);
 
