@@ -14,12 +14,21 @@ typedef struct Stack{
 }stack;
 
 void createStack(stack *);
-void push(stackEntry , stack *);
+
+int push(stackEntry , stack *);
+
 void pop(stackEntry *, stack *);
+
 int stackEmpty(stack *);
+
 int stackFull(stack *);
+
 void clearStack(stack *);
+
 void traverseStack(stack *ps, void (*pf) (stackEntry));
+
 int stackSize(stack *ps);
+
 void stackTop(stackEntry * , stack *);
+
 #endif

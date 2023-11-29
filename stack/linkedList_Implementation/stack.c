@@ -8,13 +8,16 @@ void createStack(stack *ps)
     ps->size =0;
 }
 
-void push(stackEntry e, stack *ps)
+int push(stackEntry e, stack *ps)
 {
     stackNode *pn = (stackNode*) malloc(sizeof(stackNode));
+    if(!pn)
+        return 0;
     pn->entry = e;
     pn->next = ps->top;
     ps->top = pn;
     ps->size++;
+    return 1;
 }
 
 void pop(stackEntry *pe, stack *ps)
